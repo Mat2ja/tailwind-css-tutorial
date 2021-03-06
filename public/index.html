@@ -12,8 +12,9 @@
 	</head>
 
 	<body class="text-gray-600 font-body">
-		<div>
-			<div>
+		<!-- content wrapper -->
+		<div class="grid md:grid-cols-4">
+			<div class="md:grid-span-1">
 				<nav>
 					<div>
 						<h1 class="p-4 font-extrabold uppercase border-b border-gray-100">
@@ -40,7 +41,8 @@
 				</nav>
 			</div>
 
-			<main class="px-16 py-6 bg-gray-100">
+			<main class="px-10 md:px-16 py-6 bg-gray-100 md:col-span-3 h-full">
+
 				<div class="flex justify-center space-x-4 sm:justify-end">
 					<a href="#" class="text-primary">Log in</a>
 					<a href="#" class="text-primary">Sign up</a>
@@ -55,7 +57,7 @@
 				<div>
 					<h4 class="pb-2 mt-12 font-bold border-b border-gray-200 ">Latest Recipes</h4>
 
-					<div class="mt-8">
+					<div class="mt-8 grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
 						<!-- cards go here -->
 						<div class="card">
 							<img src="./img/stew.jpg" alt="stew" class="object-cover w-full h-32 sm:h-48">
@@ -80,7 +82,7 @@
 						<div class="card">
 							<img src="./img/curry.jpg" alt="curry" class="object-cover w-full h-32 sm:h-48">
 							<div class="m-4">
-								<span class="font-bold">Tofu curry</span>
+								<span class="font-bold">Tofu Curry</span>
 								<span class="block text-sm text-gray-500">Recipe by Marija</span>
 							</div>
 							<div class="badge">

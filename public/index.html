@@ -16,12 +16,12 @@
 			<div>
 				<nav>
 					<div>
-						<h1 class="font-extrabold uppercase p-4 border-b border-gray-100">
+						<h1 class="p-4 font-extrabold uppercase border-b border-gray-100">
 							<a href="/" class="text-base md:text-xl">Food Ninja</a>
 						</h1>
 					</div>
 					<ul>
-						<li class="text-gray-700 font-bold">
+						<li class="font-bold text-gray-700">
 							<a href="#">
 								<span>Home</span>
 							</a>
@@ -40,33 +40,56 @@
 				</nav>
 			</div>
 
-			<main class="px-16 py-6">
-				<div class="flex justify-center sm:justify-end space-x-4">
+			<main class="px-16 py-6 bg-gray-100">
+				<div class="flex justify-center space-x-4 sm:justify-end">
 					<a href="#" class="text-primary">Log in</a>
 					<a href="#" class="text-primary">Sign up</a>
 				</div>
 
 
 				<header>
-					<h2 class="text-gray-700 text-6xl font-semibold leading-normal">Recipes</h2>
+					<h2 class="text-6xl font-semibold leading-normal text-gray-700">Recipes</h2>
 					<h3 class="text-2xl font-semibold leading-normal">For Ninjas</h3>
 				</header>
 
 				<div>
-					<h4 class="font-bold mt-12 pb-2 border-b border-gray-200 ">Latest Recipes</h4>
+					<h4 class="pb-2 mt-12 font-bold border-b border-gray-200 ">Latest Recipes</h4>
 
 					<div class="mt-8">
 						<!-- cards go here -->
-						<div>
-							<img src="img/stew.jpg" alt="stew">
-							<div>
-								<span>5 Bean Chili Stew</span>
-								<span>Recipe by Mario</span>
+						<div class="card">
+							<img src="./img/stew.jpg" alt="stew" class="object-cover w-full h-32 sm:h-48">
+							<div class="m-4">
+								<span class="font-bold">5 Bean Chili Stew</span>
+								<span class="block text-sm text-gray-500">Recipe by Mario</span>
+							</div>
+							<div class="badge">
+								<span>35 mins</span>
+							</div>
+						</div>
+						<div class="card">
+							<img src="./img/noodles.jpg" alt="noodles" class="object-cover w-full h-32 sm:h-48">
+							<div class="m-4">
+								<span class="font-bold">Veg Noodles</span>
+								<span class="block text-sm text-gray-500">Recipe by Mario</span>
+							</div>
+							<div class="badge">
+								<span>20 mins</span>
+							</div>
+						</div>
+						<div class="card">
+							<img src="./img/curry.jpg" alt="curry" class="object-cover w-full h-32 sm:h-48">
+							<div class="m-4">
+								<span class="font-bold">Tofu curry</span>
+								<span class="block text-sm text-gray-500">Recipe by Marija</span>
+							</div>
+							<div class="badge">
+								<span>25 mins</span>
 							</div>
 						</div>
 					</div>
 
-					<h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+					<h4 class="pb-2 mt-12 font-bold border-b border-gray-200">Most Popular</h4>
 
 					<div class="mt-8">
 						<!-- cards go here -->

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 	<head>
 		<meta charset="UTF-8">
@@ -14,13 +14,13 @@
 
 	</head>
 
-	<body class="text-gray-600 font-body">
+	<body class="text-gray-600 font-body dark:bg-gray-800 dark:text-gray-100">
 		<!-- content wrapper -->
 		<div class="grid md:grid-cols-4 min-h-screen">
 			<div class="md:grid-span-1 md:flex md:justify-end">
 				<nav class="text-right w-full">
 					<div class=" flex items-center justify-between md:block">
-						<h1 class="p-4 font-extrabold uppercase md:border-b border-gray-100">
+						<h1 class="p-4 font-extrabold uppercase md:border-b border-gray-100 dark:border-gray-700">
 							<a href="/" class="hover:text-gray-700">Food Ninja</a>
 						</h1>
 						<div class="px-4 cursor-pointer md:hidden flex justify-end" id="burger">
@@ -30,7 +30,7 @@
 						</div>
 					</div>
 					<ul class="text-sm hidden md:block mt-0 md:mt-6 " id="menu">
-						<li class="font-bold text-gray-700 py-1">
+						<li class="font-bold text-gray-700 dark:text-white py-1">
 							<a href="#" class="px-4 py-1 inline-flex items-center justify-end space-x-2 border-r-4 border-primary">
 								<span>Home</span>
 								<svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -54,25 +54,35 @@
 								</svg>
 							</a>
 						</li>
+						<li class="py-1">
+							<button class="px-4 py-1 inline-flex items-center justify-end space-x-2 border-transparent focus:outline-none" id="toggle">
+								<svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" id="sun">
+									<path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+								</svg>
+								<svg class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" id="moon">
+									<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+								</svg>
+							</button>
+						</li>
 					</ul>
 				</nav>
 			</div>
 
-			<main class="px-10 md:px-16 py-6 bg-gray-100 md:col-span-3">
+			<main class="px-10 md:px-16 py-6 bg-gray-100 dark:bg-gray-700 md:col-span-3">
 
 				<div class="flex justify-center space-x-4 sm:justify-end">
-					<a href="#" class="btn text-primary md:border-2 border-primary hover:bg-primary hover:text-white transition duration-300 ease-out">Log in</a>
-					<a href="#" class="btn text-primary md:border-2 border-primary hover:bg-primary hover:text-white">Sign up</a>
+					<a href="#" class="btn text-primary md:border-2 border-primary hover:bg-primary hover:text-white dark:hover:text-gray-700 transition duration-300 ease-out">Log in</a>
+					<a href="#" class="btn text-primary md:border-2 border-primary hover:bg-primary hover:text-white dark:hover:text-gray-700">Sign up</a>
 				</div>
 
 
 				<header>
-					<h2 class="text-6xl font-semibold leading-normal text-gray-700">Recipes</h2>
+					<h2 class="text-6xl font-semibold leading-normal text-gray-700 dark:text-white">Recipes</h2>
 					<h3 class="text-2xl font-semibold leading-normal">For Ninjas</h3>
 				</header>
 
 				<div>
-					<h4 class="pb-2 mt-12 font-bold border-b border-gray-200 ">Latest Recipes</h4>
+					<h4 class="pb-2 mt-12 font-bold border-b border-gray-200 dark:border-gray-800">Latest Recipes</h4>
 
 					<div class="mt-8 grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
 						<!-- cards go here -->
@@ -80,7 +90,7 @@
 							<img src="./img/stew.jpg" alt="stew" class="object-cover w-full h-48 sm:h-56">
 							<div class="m-4">
 								<span class="font-bold">5 Bean Chili Stew</span>
-								<span class="block text-sm text-gray-500">Recipe by Mario</span>
+								<span class="block text-sm text-gray-500 dark:text-gray-300">Recipe by Mario</span>
 							</div>
 							<div class="badge">
 								<span class="flex items-center">
@@ -95,7 +105,7 @@
 							<img src="./img/noodles.jpg" alt="noodles" class="object-cover w-full h-48 sm:h-56">
 							<div class="m-4">
 								<span class="font-bold">Veg Noodles</span>
-								<span class="block text-sm text-gray-500">Recipe by Mario</span>
+								<span class="block text-sm text-gray-500 dark:text-gray-300">Recipe by Mario</span>
 							</div>
 							<div class="badge">
 								<span class="flex items-center">
@@ -110,7 +120,7 @@
 							<img src="./img/curry.jpg" alt="curry" class="object-cover w-full h-48 sm:h-56">
 							<div class="m-4">
 								<span class="font-bold">Tofu Curry</span>
-								<span class="block text-sm text-gray-500">Recipe by Marija</span>
+								<span class="block text-sm text-gray-500 dark:text-gray-300">Recipe by Marija</span>
 							</div>
 							<div class="badge">
 								<span class="flex items-center">
@@ -123,7 +133,7 @@
 						</div>
 					</div>
 
-					<h4 class="pb-2 mt-12 font-bold border-b border-gray-200">Most Popular</h4>
+					<h4 class="pb-2 mt-12 font-bold border-b border-gray-200 dark:border-gray-800">Most Popular</h4>
 
 					<div class="mt-8">
 						<!-- cards go here -->
@@ -131,7 +141,7 @@
 				</div>
 
 				<div class="flex justify-center">
-					<div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 transition duration-300 ease-out hover:bg-opacity-50">Load more</div>
+					<div class="btn bg-secondary-100 dark:bg-gray-800 text-secondary-200 dark:text-gray-500 hover:shadow-inner transform hover:scale-125 transition duration-300 ease-out hover:bg-opacity-50 dark:hover:bg-opacity-90">Load more</div>
 				</div>
 			</main>
 		</div>

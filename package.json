@@ -1,0 +1,21 @@
+{
+	"name": "tailwind-codeninja",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build-css": "npx tailwindcss-cli@latest build src/styles.css -o public/styles.css",
+		"serve": "live-server public"
+	},
+	"keywords": [],
+	"author": "Matija Osrecki",
+	"license": "ISC",
+	"dependencies": {
+		"live-server": "^1.2.1"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.2.5",
+		"postcss": "^8.2.7",
+		"tailwindcss": "^2.0.3"
+	}
+}
